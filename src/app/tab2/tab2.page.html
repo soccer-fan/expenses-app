@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Save an expense
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text>
+    <h3> {{titleMessage}} </h3>
+  </ion-text>
+  <img [src]="currentImage" *ngIf="currentImage">
+  <section>
+  <ion-item>
+    <ion-label>Cost (in £)</ion-label>
+    <ion-input id="expense-amount" required type="text" (ionChange)="handleValueInput($event)"></ion-input>
+  </ion-item>
+</section>
+  <br>
+
+  <section>
+    <header>Take a photo of your receipt</header>
+    <br>
+    <ion-button expand="block" (click)="captureImage()"><ion-icon name="camera"></ion-icon></ion-button>
+  </section>
+  <br>
+  
+  <ion-button expand="block" fill="outline" (click)="saveExpense()">Save Expense</ion-button>
+</ion-content>

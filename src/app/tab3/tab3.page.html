@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Expenses gallery
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let photo of photoService.photos">
+    <img [src]="photo.data" />
+    <ion-card-header>
+      <ion-card-subtitle>{{photo.timestamp}}</ion-card-subtitle>
+      <ion-card-title>£{{photo.value}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
