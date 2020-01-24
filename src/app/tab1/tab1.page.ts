@@ -7,8 +7,11 @@ import { PhotoService } from '../services/photo.service';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page {
-  total: Number;
-  constructor(public photoService: PhotoService) {}
 
+/**
+ * Home tab
+ * Simple class to import photoservice so that the running total can be displayed in the tab
+ */
+export class Tab1Page {
+  constructor(public photoService: PhotoService) {}
 }
