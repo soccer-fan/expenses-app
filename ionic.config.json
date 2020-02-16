@@ -1,0 +1,8 @@
+{
+  "name": "jhub",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "b20b9468"
+}
